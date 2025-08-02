@@ -1,0 +1,58 @@
+{
+  "category": {
+    "id": "self-introduction",
+    "name": "자기소개", 
+    "emoji": "👤"
+  },
+  "sentences": [
+    {
+      "id": "si001",
+      "korean": "제 전공은 경영학입니다.",
+      "english": "I majored in business administration.",
+      "difficulty": "medium",
+      "tags": ["education", "major"]
+    },
+    {
+      "id": "si002",
+      "korean": "저는 마케팅 분야에서 3년의 경험이 있습니다.",
+      "english": "I have three years of experience in marketing.",
+      "difficulty": "medium", 
+      "tags": ["experience", "marketing"]
+    },
+    {
+      "id": "si003",
+      "korean": "졸업 후 XYZ 기업에서 인턴십을 시작했습니다.",
+      "english": "After graduation, I started an internship at XYZ corporation.",
+      "difficulty": "medium",
+      "tags": ["graduation", "internship"]
+    },
+    {
+      "id": "si004",
+      "korean": "저는 삼성전자에서 일한 경험이 있습니다.",
+      "english": "I worked at Samsung Electronics.",
+      "difficulty": "medium",
+      "tags": ["work", "company"]
+    },
+    {
+      "id": "si005",
+      "korean": "저는 새로운 업무 환경에 아주 잘 적응합니다.",
+      "english": "I adapt very well to new work environments.",
+      "difficulty": "medium",
+      "tags": ["adaptability", "personality", "work"]
+    },
+    {
+      "id": "si006",
+      "korean": "새로운 것을 배우는 걸 좋아합니다.",
+      "english": "I love learning new things.",
+      "difficulty": "medium",
+      "tags": ["learning", "growth", "personality"]
+    },
+    {
+      "id": "si007",
+      "korean": "저는 정열적인 사람입니다.",
+      "english": "I am a passionate person.",
+      "difficulty": "medium",
+      "tags": ["personality", "passion", "character"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "category": {
+    "id": "skills",
+    "name": "기술과 능력",
+    "emoji": "🛠️"
+  },
+  "sentences": [
+    {
+      "id": "sk001",
+      "korean": "데이터 분석에 능숙합니다.",
+      "english": "I'm proficient in data analysis.",
+      "difficulty": "medium",
+      "tags": ["data", "analysis", "proficient"]
+    },
+    {
+      "id": "sk002",
+      "korean": "영어로 업무를 수행할 수 있습니다.",
+      "english": "I can work in English.",
+      "difficulty": "easy",
+      "tags": ["english", "work"]
+    },
+    {
+      "id": "sk003",
+      "korean": "저는 빠르게 새로운 기술을 익힐 수 있습니다.",
+      "english": "I can quickly learn new tools.",
+      "difficulty": "medium",
+      "tags": ["learning", "technology", "tools"]
+    },
+    {
+      "id": "sk004",
+      "korean": "협업 도구 사용에 익숙합니다.",
+      "english": "I'm familiar with collaboration tools.",
+      "difficulty": "medium",
+      "tags": ["collaboration", "tools", "familiar"]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "categories": [
+    {
+      "id": "basic-greetings",
+      "name": "면접 기본 인사",
+      "emoji": "👋",
+      "description": "면접 시작 시 필수 인사말",
+      "file": "basic-greetings.json",
+      "count": 3,
+      "difficulty": "easy",
+      "tags": ["greeting", "introduction", "basic"]
+    },
+    {
+      "id": "self-introduction", 
+      "name": "자기소개",
+      "emoji": "👤",
+      "description": "나를 소개하는 핵심 표현",
+      "file": "self-introduction.json",
+      "count": 4,
+      "difficulty": "medium",
+      "tags": ["introduction", "background", "experience"]
+    },
+    {
+      "id": "motivation",
+      "name": "지원 동기",
+      "emoji": "💼", 
+      "description": "회사 지원 이유와 동기",
+      "file": "motivation.json",
+      "count": 7,
+      "difficulty": "medium",
+      "tags": ["motivation", "company", "vision"]
+    },
+    {
+      "id": "strengths",
+      "name": "강점과 성격",
+      "emoji": "⭐",
+      "description": "개인의 장점과 특성",
+      "file": "strengths.json", 
+      "count": 8,
+      "difficulty": "medium",
+      "tags": ["strengths", "personality", "skills"]
+    },
+    {
+      "id": "skills",
+      "name": "기술과 능력", 
+      "emoji": "🛠️",
+      "description": "보유 기술과 업무 능력",
+      "file": "skills.json",
+      "count": 4,
+      "difficulty": "medium",
+      "tags": ["skills", "technical", "abilities"]
+    },
+    {
+      "id": "weaknesses",
+      "name": "약점과 개선점",
+      "emoji": "🔧",
+      "description": "단점과 개선 노력",
+      "file": "weaknesses.json",
+      "count": 5, 
+      "difficulty": "hard",
+      "tags": ["weaknesses", "improvement", "development"]
+    },
+    {
+      "id": "experience",
+      "name": "경험과 성과",
+      "emoji": "📈", 
+      "description": "과거 경험과 성취",
+      "file": "experience.json",
+      "count": 6,
+      "difficulty": "medium",
+      "tags": ["experience", "achievements", "results"]
+    },
+    {
+      "id": "teamwork", 
+      "name": "팀워크와 협업",
+      "emoji": "🤝",
+      "description": "협업과 소통 능력",
+      "file": "teamwork.json",
+      "count": 5,
+      "difficulty": "medium", 
+      "tags": ["teamwork", "collaboration", "communication"]
+    },
+    {
+      "id": "questions",
+      "name": "면접 질문들",
+      "emoji": "❓",
+      "description": "자주 나오는 면접 질문",
+      "file": "questions.json",
+      "count": 6,
+      "difficulty": "easy",
+      "tags": ["questions", "common", "interview"]
+    },
+    {
+      "id": "reverse-questions",
+      "name": "역질문", 
+      "emoji": "🙋",
+      "description": "면접관에게 하는 질문",
+      "file": "reverse-questions.json",
+      "count": 5,
+      "difficulty": "medium",
+      "tags": ["reverse", "questions", "company"]
+    },
+    {
+      "id": "closing",
+      "name": "마무리 인사",
+      "emoji": "👏",
+      "description": "면접 마무리 인사말", 
+      "file": "closing.json",
+      "count": 6,
+      "difficulty": "easy",
+      "tags": ["closing", "goodbye", "thanks"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "totalCategories": 11,
+    "totalSentences": 59,
+    "lastUpdated": "2025-01-01",
+    "language": "ko-en"
+  }
+}

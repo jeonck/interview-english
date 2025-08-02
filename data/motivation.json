@@ -1,0 +1,58 @@
+{
+  "category": {
+    "id": "motivation",
+    "name": "지원 동기",
+    "emoji": "💼"
+  },
+  "sentences": [
+    {
+      "id": "mt001",
+      "korean": "이 회사에 지원한 이유는 지속 가능한 경영에 끌렸기 때문입니다.",
+      "english": "I applied because I was drawn to your focus on sustainability.",
+      "difficulty": "hard",
+      "tags": ["motivation", "sustainability"]
+    },
+    {
+      "id": "mt002",
+      "korean": "이 회사는 혁신적이라 생각합니다.",
+      "english": "I believe this company is very innovative.",
+      "difficulty": "medium",
+      "tags": ["innovation", "company"]
+    },
+    {
+      "id": "mt003",
+      "korean": "귀사의 비전에 깊이 공감합니다.",
+      "english": "I strongly resonate with your company's vision.",
+      "difficulty": "hard",
+      "tags": ["vision", "resonate"]
+    },
+    {
+      "id": "mt004",
+      "korean": "이 산업에 오래 전부터 관심이 있었습니다.",
+      "english": "I've been interested in this industry for a long time.",
+      "difficulty": "medium",
+      "tags": ["industry", "interest"]
+    },
+    {
+      "id": "mt005",
+      "korean": "이 포지션이 제 커리어 목표와 잘 맞습니다.",
+      "english": "This position aligns well with my career goals.",
+      "difficulty": "medium",
+      "tags": ["position", "career", "goals"]
+    },
+    {
+      "id": "mt006",
+      "korean": "귀사의 제품을 평소에도 자주 사용합니다.",
+      "english": "I often use your products.",
+      "difficulty": "easy",
+      "tags": ["products", "usage"]
+    },
+    {
+      "id": "mt007",
+      "korean": "최근 친환경 캠페인을 인상 깊게 보았습니다.",
+      "english": "I was impressed by your recent eco-friendly campaign.",
+      "difficulty": "hard",
+      "tags": ["campaign", "eco-friendly", "impressed"]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>면접 영어 마스터</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 면접 영어 마스터</h1>
+            <p class="header-subtitle">영어 면접의 자신감을 키워보세요</p>
+        </header>
+
+        <!-- 메인 메뉴 -->
+        <div id="main-menu" class="screen active">
+            <div class="welcome-card">
+                <h2>✨ 학습을 시작해보세요</h2>
+                <p>59개의 핵심 면접 표현으로<br>완벽한 영어 면접을 준비하세요</p>
+            </div>
+
+            <div id="category-list" class="category-grid">
+                <!-- 카테고리 버튼들이 동적으로 생성됩니다 -->
+            </div>
+
+            <div class="menu-buttons">
+                <button id="random-mode-btn" class="btn btn-primary">
+                    <span>🔀</span>
+                    <span>랜덤 학습</span>
+                </button>
+                <button id="all-mode-btn" class="btn btn-secondary">
+                    <span>📚</span>
+                    <span>전체 학습</span>
+                </button>
+                <button id="infinite-mode-btn" class="btn btn-ghost">
+                    <span>🔄</span>
+                    <span>무한반복 모드</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 학습 화면 -->
+        <div id="study-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress-fill"></div>
+                </div>
+                <div class="progress-info">
+                    <span id="progress-text">1/10</span>
+                    <span id="current-category">카테고리명</span>
+                </div>
+            </div>
+
+            <!-- 한글 문장 단계 -->
+            <div id="korean-phase" class="phase active">
+                <div class="phase-header">
+                    <h2>🇰🇷 한국어를 영어로</h2>
+                    <p>아래 문장을 영어로 말해보세요</p>
+                </div>
+                
+                <div id="korean-sentence" class="sentence korean-text">
+                    <!-- 한글 문장이 여기에 표시 -->
+                </div>
+                
+                <div class="timer-container">
+                    <div id="timer-circle">
+                        <span id="timer-text">10</span>
+                    </div>
+                </div>
+                
+                <button id="show-answer-btn" class="btn btn-primary">
+                    <span>💡</span>
+                    <span>정답 확인하기</span>
+                </button>
+            </div>
+
+            <!-- 영어 정답 단계 -->
+            <div id="answer-phase" class="phase">
+                <div class="phase-header">
+                    <h2>🇺🇸 영어 정답</h2>
+                    <p>정답을 확인하고 따라 말해보세요</p>
+                </div>
+                
+                <div id="english-sentence" class="sentence english-text">
+                    <!-- 영어 정답이 여기에 표시 -->
+                </div>
+                
+                <div id="pronunciation-guide" class="pronunciation">
+                    <!-- 발음 가이드 -->
+                </div>
+                
+                <div class="answer-controls">
+                    <button id="play-again-btn" class="btn btn-outline">
+                        <span>🔊</span>
+                        <span>다시 듣기</span>
+                    </button>
+                    
+                    <div class="rating-buttons">
+                        <button class="rating-btn easy" data-rating="easy">
+                            <span>😊</span>
+                            <span>쉬워요</span>
+                        </button>
+                        <button class="rating-btn normal" data-rating="normal">
+                            <span>😐</span>
+                            <span>보통</span>
+                        </button>
+                        <button class="rating-btn hard" data-rating="hard">
+                            <span>😰</span>
+                            <span>어려워요</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <button id="next-btn" class="btn btn-primary">
+                    <span>➡️</span>
+                    <span>다음 문장</span>
+                </button>
+            </div>
+
+            <!-- 완료 단계 -->
+            <div id="complete-phase" class="phase">
+                <div class="phase-header">
+                    <h2>🎉 학습 완료!</h2>
+                    <p>수고하셨습니다. 학습 결과를 확인해보세요</p>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="total-count">0</span>
+                        <span class="stat-label">총 문장</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="easy-count">0</span>
+                        <span class="stat-label">쉬운 문장</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="hard-count">0</span>
+                        <span class="stat-label">어려운 문장</span>
+                    </div>
+                </div>
+                
+                <div class="complete-buttons">
+                    <button id="restart-btn" class="btn btn-primary">
+                        <span>🔄</span>
+                        <span>다시 학습하기</span>
+                    </button>
+                    <button id="home-btn" class="btn btn-outline">
+                        <span>🏠</span>
+                        <span>홈으로 돌아가기</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="control-buttons">
+                <button id="back-btn" class="btn btn-outline">
+                    <span>←</span>
+                    <span>뒤로</span>
+                </button>
+                <button id="pause-btn" class="btn btn-outline">
+                    <span>⏸️</span>
+                    <span>일시정지</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- 설정 화면 -->
+        <div id="settings-screen" class="screen">
+            <div class="phase-header">
+                <h2>⚙️ 학습 설정</h2>
+                <p>개인에게 맞는 학습 환경을 설정하세요</p>
+            </div>
+            
+            <div class="settings-group">
+                <label for="timer-duration">💭 생각할 시간</label>
+                <input type="range" id="timer-duration" min="5" max="30" value="10">
+                <div style="display: flex; justify-content: space-between; margin-top: 0.5rem;">
+                    <span style="font-size: 0.8rem; color: var(--text-secondary);">5초</span>
+                    <span id="timer-value" style="font-size: 0.8rem; color: var(--primary-color); font-weight: 600;">10초</span>
+                    <span style="font-size: 0.8rem; color: var(--text-secondary);">30초</span>
+                </div>
+            </div>
+            
+            <div class="settings-group">
+                <label for="auto-play">
+                    🔊 자동 음성 재생
+                    <input type="checkbox" id="auto-play" checked>
+                </label>
+                <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.5rem;">
+                    정답 표시 시 자동으로 영어 문장을 읽어줍니다
+                </p>
+            </div>
+            
+            <div class="settings-group">
+                <label for="repeat-count">🔁 반복 재생 횟수</label>
+                <select id="repeat-count">
+                    <option value="1">1번</option>
+                    <option value="2" selected>2번</option>
+                    <option value="3">3번</option>
+                </select>
+            </div>
+            
+            <button id="settings-back-btn" class="btn btn-primary">
+                <span>✅</span>
+                <span>설정 완료</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- 플로팅 설정 버튼 -->
+    <button id="settings-btn" class="fab">⚙️</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

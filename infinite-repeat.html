@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>무한반복 학습 모드</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            overflow: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .fullscreen-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .sentence-display {
+            font-size: clamp(1.5rem, 7vw, 4rem);
+            line-height: 1.3;
+            font-weight: 700;
+            max-width: 95%;
+            word-wrap: break-word;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .korean-text {
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .english-text {
+            color: #00ff88;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .controls {
+            position: fixed;
+            top: env(safe-area-inset-top, 1rem);
+            right: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .controls:hover,
+        .controls.show {
+            opacity: 1;
+        }
+
+        .control-btn {
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            backdrop-filter: blur(10px);
+            min-width: 44px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .control-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .control-btn:active {
+            transform: scale(0.95);
+        }
+
+        .category-selector {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .category-selector-content {
+            max-width: 400px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .category-selector h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #00ff88, #00cc6a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .category-btn:hover {
+            background: rgba(0, 255, 136, 0.1);
+            border-color: rgba(0, 255, 136, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .category-btn:active {
+            transform: scale(0.98);
+        }
+
+        .category-btn .emoji {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .category-btn-content {
+            flex: 1;
+        }
+
+        .category-btn h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .category-btn p {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        .mode-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            width: 100%;
+        }
+
+        .mode-btn {
+            background: linear-gradient(135deg, #00ff88, #00cc6a);
+            color: #000;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            min-height: 52px;
+        }
+
+        .mode-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 255, 136, 0.3);
+        }
+
+        .mode-btn:active {
+            transform: scale(0.98);
+        }
+
+        .mode-btn.secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .mode-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .progress-indicator {
+            position: fixed;
+            bottom: env(safe-area-inset-bottom, 1rem);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.875rem;
+            opacity: 0.8;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            font-weight: 600;
+        }
+
+        .shortcut-hint {
+            position: fixed;
+            bottom: env(safe-area-inset-bottom, 4rem);
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.75rem;
+            opacity: 0.5;
+            color: #888;
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .shortcut-hint.fade-out {
+            opacity: 0;
+        }
+
+        .error-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(239, 68, 68, 0.9);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            z-index: 3000;
+            text-align: center;
+        }
+
+        .loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.2rem;
+            z-index: 3000;
+        }
+
+        /* 모바일 최적화 */
+        @media (max-width: 768px) {
+            .sentence-display {
+                font-size: clamp(1.25rem, 6vw, 3rem);
+                padding: 1rem;
+            }
+            
+            .controls {
+                top: env(safe-area-inset-top, 0.5rem);
+                right: 0.5rem;
+                gap: 0.25rem;
+            }
+            
+            .control-btn {
+                padding: 0.5rem;
+                font-size: 0.75rem;
+                min-width: 40px;
+                min-height: 40px;
+            }
+            
+            .category-selector {
+                padding: 1rem;
+            }
+            
+            .category-selector h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* 터치 디바이스 최적화 */
+        @media (hover: none) and (pointer: coarse) {
+            body {
+                cursor: default;
+            }
+            
+            .control-btn,
+            .category-btn,
+            .mode-btn {
+                min-height: 48px;
+            }
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .sentence-display:not(:empty) {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        /* 접근성 */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 로딩 표시 -->
+    <div id="loading" class="loading">
+        📚 데이터를 불러오는 중...
+    </div>
+
+    <!-- 오류 메시지 -->
+    <div id="error-message" class="error-message hidden">
+        <p>❌ 오류가 발생했습니다</p>
+        <p id="error-text"></p>
+        <button onclick="location.reload()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: white; color: black; border: none; border-radius: 0.5rem; cursor: pointer;">🔄 다시 시도</button>
+    </div>
+
+    <!-- 카테고리 선택 화면 -->
+    <div id="category-selector" class="category-selector hidden">
+        <div class="category-selector-content">
+            <h2>🎯 학습 카테고리 선택</h2>
+            <div id="category-grid" class="category-grid">
+                <!-- 카테고리 버튼들이 여기에 동적으로 생성됩니다 -->
+            </div>
+            <div class="mode-buttons">
+                <button id="random-mode-btn" class="mode-btn">
+                    <span>🔀</span>
+                    <span>랜덤 모드</span>
+                </button>
+                <button id="all-mode-btn" class="mode-btn">
+                    <span>📖</span>
+                    <span>전체 모드</span>
+                </button>
+                <button id="back-to-main-btn" class="mode-btn secondary">
+                    <span>←</span>
+                    <span>메인 앱으로</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 무한반복 학습 화면 -->
+    <div id="learning-screen" class="fullscreen-container hidden">
+        <div id="sentence-display" class="sentence-display">
+            학습을 시작하려면 카테고리를 선택하세요
+        </div>
+    </div>
+
+    <!-- 컨트롤 버튼들 -->
+    <div id="controls" class="controls">
+        <button id="pause-btn" class="control-btn" title="일시정지/재개 (스페이스바)">⏸️</button>
+        <button id="skip-btn" class="control-btn" title="건너뛰기 (→)">⏭️</button>
+        <button id="menu-btn" class="control-btn" title="메뉴 (ESC)">📋</button>
+    </div>
+
+    <!-- 진행 상황 및 단축키 안내 -->
+    <div id="progress" class="progress-indicator hidden">
+        <span id="current-sentence">1</span> / <span id="total-sentences">0</span>
+        | <span id="current-category">카테고리</span>
+    </div>
+
+    <div id="shortcut-hint" class="shortcut-hint">
+        💡 스페이스바: 일시정지 | →: 건너뛰기 | ESC: 메뉴
+    </div>
+
+    <script>
+        class InfiniteRepeatApp {
+            constructor() {
+                this.data = null;
+                this.currentSentences = [];
+                this.currentIndex = 0;
+                this.currentMode = null;
+                this.isRunning = false;
+                this.isPaused = false;
+                this.currentTimeout = null;
+                this.currentPhase = 'korean';
+                this.mouseTimer = null;
+                
+                this.init();
+            }
+
+            async init() {
+                try {
+                    this.showLoading();
+                    await this.loadData();
+                    this.setupEventListeners();
+                    this.hideLoading();
+                    this.showCategorySelector();
+                    this.hideShortcutHint();
+                } catch (error) {
+                    console.error('초기화 실패:', error);
+                    this.showError('앱을 불러오는 중 오류가 발생했습니다: ' + error.message);
+                }
+            }
+
+            showLoading() {
+                document.getElementById('loading').classList.remove('hidden');
+            }
+
+            hideLoading() {
+                document.getElementById('loading').classList.add('hidden');
+            }
+
+            showError(message) {
+                this.hideLoading();
+                document.getElementById('error-text').textContent = message;
+                document.getElementById('error-message').classList.remove('hidden');
+            }
+
+            hideError() {
+                document.getElementById('error-message').classList.add('hidden');
+            }
+
+            async loadData() {
+                try {
+                    console.log('데이터 로딩 시작...');
+                    const response = await fetch('./data.json');
+                    
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
+                    this.data = await response.json();
+                    
+                    if (!this.data || !this.data.categories || !Array.isArray(this.data.categories)) {
+                        throw new Error('잘못된 데이터 형식입니다');
+                    }
+                    
+                    console.log('데이터 로딩 완료:', this.data.categories.length + '개 카테고리');
+                } catch (error) {
+                    console.error('데이터 로딩 실패:', error);
+                    throw new Error('data.json 파일을 불러올 수 없습니다. ' + error.message);
+                }
+            }
+
+            setupEventListeners() {
+                try {
+                    // 안전한 이벤트 리스너 등록
+                    this.safeAddEventListener('random-mode-btn', 'click', () => this.startRandomMode());
+                    this.safeAddEventListener('all-mode-btn', 'click', () => this.startAllMode());
+                    this.safeAddEventListener('back-to-main-btn', 'click', () => {
+                        window.location.href = './index.html';
+                    });
+
+                    this.safeAddEventListener('pause-btn', 'click', () => this.togglePause());
+                    this.safeAddEventListener('skip-btn', 'click', () => this.skipToNext());
+                    this.safeAddEventListener('menu-btn', 'click', () => this.showCategorySelector());
+
+                    // 키보드 이벤트
+                    document.addEventListener('keydown', (e) => {
+                        try {
+                            switch(e.code) {
+                                case 'Space':
+                                    e.preventDefault();
+                                    this.togglePause();
+                                    break;
+                                case 'ArrowRight':
+                                    e.preventDefault();
+                                    this.skipToNext();
+                                    break;
+                                case 'Escape':
+                                    this.showCategorySelector();
+                                    break;
+                            }
+                        } catch (error) {
+                            console.error('키보드 이벤트 오류:', error);
+                        }
+                    });
+
+                    // 마우스/터치 이벤트
+                    document.addEventListener('mousemove', () => this.showControls());
+                    document.addEventListener('touchstart', () => this.showControls());
+
+                    // 화면 터치로 일시정지/재개
+                    const learningScreen = document.getElementById('learning-screen');
+                    if (learningScreen) {
+                        learningScreen.addEventListener('click', (e) => {
+                            if (e.target === learningScreen || e.target === document.getElementById('sentence-display')) {
+                                this.togglePause();
+                            }
+                        });
+                    }
+                } catch (error) {
+                    console.error('이벤트 리스너 설정 오류:', error);
+                    throw error;
+                }
+            }
+
+            safeAddEventListener(elementId, event, handler) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.addEventListener(event, handler);
+                } else {
+                    console.warn(`요소를 찾을 수 없습니다: ${elementId}`);
+                }
+            }
+
+            showControls() {
+                try {
+                    const controls = document.getElementById('controls');
+                    if (controls) {
+                        controls.classList.add('show');
+                        
+                        clearTimeout(this.mouseTimer);
+                        this.mouseTimer = setTimeout(() => {
+                            controls.classList.remove('show');
+                        }, 3000);
+                    }
+                } catch (error) {
+                    console.error('컨트롤 표시 오류:', error);
+                }
+            }
+
+            hideShortcutHint() {
+                setTimeout(() => {
+                    const hint = document.getElementById('shortcut-hint');
+                    if (hint) {
+                        hint.classList.add('fade-out');
+                    }
+                }, 5000);
+            }
+
+            showCategorySelector() {
+                try {
+                    this.stopLearning();
+                    
+                    const categorySelector = document.getElementById('category-selector');
+                    const learningScreen = document.getElementById('learning-screen');
+                    const progress = document.getElementById('progress');
+                    
+                    if (categorySelector) categorySelector.classList.remove('hidden');
+                    if (learningScreen) learningScreen.classList.add('hidden');
+                    if (progress) progress.classList.add('hidden');
+                    
+                    document.body.style.cursor = 'default';
+                    this.renderCategories();
+                } catch (error) {
+                    console.error('카테고리 선택 화면 표시 오류:', error);
+                    this.showError('카테고리 화면을 표시할 수 없습니다: ' + error.message);
+                }
+            }
+
+            renderCategories() {
+                try {
+                    const categoryGrid = document.getElementById('category-grid');
+                    if (!categoryGrid) {
+                        throw new Error('카테고리 그리드 요소를 찾을 수 없습니다');
+                    }
+
+                    categoryGrid.innerHTML = '';
+
+                    const categoryEmojis = [
+                        '👋', '👤', '💼', '⭐', '🛠️', '🔧', '📈', '🤝', '❓', '🙋', '👏'
+                    ];
+
+                    this.data.categories.forEach((category, index) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'category-btn';
+                        btn.innerHTML = `
+                            <span class="emoji">${categoryEmojis[index] || '📝'}</span>
+                            <div class="category-btn-content">
+                                <h3>${category.name}</h3>
+                                <p>${category.sentences ? category.sentences.length : 0}개 문장</p>
+                            </div>
+                        `;
+                        btn.addEventListener('click', () => {
+                            this.startCategoryMode(index);
+                        });
+                        categoryGrid.appendChild(btn);
+                    });
+                } catch (error) {
+                    console.error('카테고리 렌더링 오류:', error);
+                    this.showError('카테고리를 불러올 수 없습니다: ' + error.message);
+                }
+            }
+
+            startCategoryMode(categoryIndex) {
+                try {
+                    if (!this.data.categories[categoryIndex]) {
+                        throw new Error('유효하지 않은 카테고리 인덱스입니다');
+                    }
+
+                    const category = this.data.categories[categoryIndex];
+                    if (!category.sentences || !Array.isArray(category.sentences)) {
+                        throw new Error('카테고리에 문장 데이터가 없습니다');
+                    }
+
+                    this.currentSentences = [...category.sentences];
+                    this.currentMode = { type: 'category', name: category.name };
+                    this.startLearning();
+                } catch (error) {
+                    console.error('카테고리 모드 시작 오류:', error);
+                    this.showError('카테고리 학습을 시작할 수 없습니다: ' + error.message);
+                }
+            }
+
+            startRandomMode() {
+                try {
+                    const allSentences = [];
+                    this.data.categories.forEach(category => {
+                        if (category.sentences && Array.isArray(category.sentences)) {
+                            category.sentences.forEach(sentence => {
+                                allSentences.push({
+                                    ...sentence,
+                                    categoryName: category.name
+                                });
+                            });
+                        }
+                    });
+                    
+                    if (allSentences.length === 0) {
+                        throw new Error('학습할 문장이 없습니다');
+                    }
+
+                    this.currentSentences = this.shuffleArray(allSentences);
+                    this.currentMode = { type: 'random', name: '랜덤 모드' };
+                    this.startLearning();
+                } catch (error) {
+                    console.error('랜덤 모드 시작 오류:', error);
+                    this.showError('랜덤 학습을 시작할 수 없습니다: ' + error.message);
+                }
+            }
+
+            startAllMode() {
+                try {
+                    const allSentences = [];
+                    this.data.categories.forEach(category => {
+                        if (category.sentences && Array.isArray(category.sentences)) {
+                            category.sentences.forEach(sentence => {
+                                allSentences.push({
+                                    ...sentence,
+                                    categoryName: category.name
+                                });
+                            });
+                        }
+                    });
+                    
+                    if (allSentences.length === 0) {
+                        throw new Error('학습할 문장이 없습니다');
+                    }
+
+                    this.currentSentences = allSentences;
+                    this.currentMode = { type: 'all', name: '전체 모드' };
+                    this.startLearning();
+                } catch (error) {
+                    console.error('전체 모드 시작 오류:', error);
+                    this.showError('전체 학습을 시작할 수 없습니다: ' + error.message);
+                }
+            }
+
+            startLearning() {
+                try {
+                    const categorySelector = document.getElementById('category-selector');
+                    const learningScreen = document.getElementById('learning-screen');
+                    const progress = document.getElementById('progress');
+                    
+                    if (categorySelector) categorySelector.classList.add('hidden');
+                    if (learningScreen) learningScreen.classList.remove('hidden');
+                    if (progress) progress.classList.remove('hidden');
+                    
+                    document.body.style.cursor = 'none';
+                    
+                    this.currentIndex = 0;
+                    this.isRunning = true;
+                    this.isPaused = false;
+                    this.updatePauseButton();
+                    this.updateProgress();
+                    this.showNextSentence();
+                } catch (error) {
+                    console.error('학습 시작 오류:', error);
+                    this.showError('학습을 시작할 수 없습니다: ' + error.message);
+                }
+            }
+
+            showNextSentence() {
+                try {
+                    if (!this.isRunning || this.isPaused) return;
+
+                    if (this.currentIndex >= this.currentSentences.length) {
+                        this.currentIndex = 0;
+                        if (this.currentMode.type === 'random') {
+                            this.currentSentences = this.shuffleArray(this.currentSentences);
+                        }
+                    }
+
+                    this.updateProgress();
+                    this.currentPhase = 'korean';
+                    this.showKoreanPhase();
+                } catch (error) {
+                    console.error('다음 문장 표시 오류:', error);
+                    this.showError('문장을 표시할 수 없습니다: ' + error.message);
+                }
+            }
+
+            showKoreanPhase() {
+                try {
+                    if (!this.isRunning || this.isPaused) return;
+
+                    const sentence = this.currentSentences[this.currentIndex];
+                    if (!sentence || !sentence.korean) {
+                        throw new Error('유효하지 않은 문장 데이터입니다');
+                    }
+
+                    const display = document.getElementById('sentence-display');
+                    if (!display) {
+                        throw new Error('문장 표시 요소를 찾을 수 없습니다');
+                    }
+                    
+                    display.textContent = sentence.korean;
+                    display.className = 'sentence-display korean-text';
+                    
+                    this.currentTimeout = setTimeout(() => {
+                        this.showEnglishPhase1();
+                    }, 3000);
+                } catch (error) {
+                    console.error('한글 단계 표시 오류:', error);
+                    this.showError('한글 문장을 표시할 수 없습니다: ' + error.message);
+                }
+            }
+
+            showEnglishPhase1() {
+                try {
+                    if (!this.isRunning || this.isPaused) return;
+
+                    const sentence = this.currentSentences[this.currentIndex];
+                    if (!sentence || !sentence.english) {
+                        throw new Error('영어 문장 데이터가 없습니다');
+                    }
+
+                    const display = document.getElementById('sentence-display');
+                    if (!display) return;
+                    
+                    display.textContent = sentence.english;
+                    display.className = 'sentence-display english-text';
+                    this.currentPhase = 'english1';
+                    
+                    this.currentTimeout = setTimeout(() => {
+                        this.showBlankPhase();
+                    }, 1000);
+                } catch (error) {
+                    console.error('영어 1단계 표시 오류:', error);
+                }
+            }
+
+            showBlankPhase() {
+                try {
+                    if (!this.isRunning || this.isPaused) return;
+
+                    const display = document.getElementById('sentence-display');
+                    if (display) {
+                        display.textContent = '';
+                        this.currentPhase = 'blank';
+                    }
+                    
+                    this.currentTimeout = setTimeout(() => {
+                        this.showEnglishPhase2();
+                    }, 1000);
+                } catch (error) {
+                    console.error('공백 단계 표시 오류:', error);
+                }
+            }
+
+            showEnglishPhase2() {
+                try {
+                    if (!this.isRunning || this.isPaused) return;
+
+                    const sentence = this.currentSentences[this.currentIndex];
+                    if (!sentence || !sentence.english) return;
+
+                    const display = document.getElementById('sentence-display');
+                    if (!display) return;
+                    
+                    display.textContent = sentence.english;
+                    display.className = 'sentence-display english-text';
+                    this.currentPhase = 'english2';
+                    
+                    this.currentTimeout = setTimeout(() => {
+                        this.currentIndex++;
+                        this.showNextSentence();
+                    }, 3000);
+                } catch (error) {
+                    console.error('영어 2단계 표시 오류:', error);
+                }
+            }
+
+            togglePause() {
+                try {
+                    if (!this.isRunning) return;
+                    
+                    if (this.isPaused) {
+                        this.isPaused = false;
+                        this.updatePauseButton();
+                        this.continueCurrentPhase();
+                    } else {
+                        this.isPaused = true;
+                        this.updatePauseButton();
+                        this.clearCurrentTimeout();
+                        
+                        const display = document.getElementById('sentence-display');
+                        if (display && display.textContent) {
+                            display.style.opacity = '0.5';
+                            setTimeout(() => {
+                                if (this.isPaused && display) {
+                                    display.style.opacity = '1';
+                                }
+                            }, 200);
+                        }
+                    }
+                } catch (error) {
+                    console.error('일시정지 토글 오류:', error);
+                }
+            }
+
+            updatePauseButton() {
+                try {
+                    const pauseBtn = document.getElementById('pause-btn');
+                    if (pauseBtn) {
+                        pauseBtn.textContent = this.isPaused ? '▶️' : '⏸️';
+                        pauseBtn.title = this.isPaused ? '재개 (스페이스바)' : '일시정지 (스페이스바)';
+                    }
+                } catch (error) {
+                    console.error('일시정지 버튼 업데이트 오류:', error);
+                }
+            }
+
+            continueCurrentPhase() {
+                try {
+                    const display = document.getElementById('sentence-display');
+                    if (display) {
+                        display.style.opacity = '1';
+                    }
+                    
+                    switch(this.currentPhase) {
+                        case 'korean':
+                            this.showKoreanPhase();
+                            break;
+                        case 'english1':
+                            this.showEnglishPhase1();
+                            break;
+                        case 'blank':
+                            this.showBlankPhase();
+                            break;
+                        case 'english2':
+                            this.showEnglishPhase2();
+                            break;
+                    }
+                } catch (error) {
+                    console.error('단계 계속 진행 오류:', error);
+                }
+            }
+
+            skipToNext() {
+                try {
+                    if (!this.isRunning) return;
+                    
+                    this.clearCurrentTimeout();
+                    this.currentIndex++;
+                    
+                    if (this.isPaused) {
+                        this.isPaused = false;
+                        this.updatePauseButton();
+                    }
+                    
+                    this.showNextSentence();
+                } catch (error) {
+                    console.error('건너뛰기 오류:', error);
+                }
+            }
+
+            stopLearning() {
+                try {
+                    this.isRunning = false;
+                    this.isPaused = false;
+                    this.clearCurrentTimeout();
+                    this.updatePauseButton();
+                    
+                    const display = document.getElementById('sentence-display');
+                    if (display) {
+                        display.style.opacity = '1';
+                    }
+                } catch (error) {
+                    console.error('학습 중지 오류:', error);
+                }
+            }
+
+            clearCurrentTimeout() {
+                if (this.currentTimeout) {
+                    clearTimeout(this.currentTimeout);
+                    this.currentTimeout = null;
+                }
+            }
+
+            updateProgress() {
+                try {
+                    const currentSentenceEl = document.getElementById('current-sentence');
+                    const totalSentencesEl = document.getElementById('total-sentences');
+                    const currentCategoryEl = document.getElementById('current-category');
+                    
+                    if (currentSentenceEl) currentSentenceEl.textContent = this.currentIndex + 1;
+                    if (totalSentencesEl) totalSentencesEl.textContent = this.currentSentences.length;
+                    if (currentCategoryEl && this.currentMode) currentCategoryEl.textContent = this.currentMode.name;
+                } catch (error) {
+                    console.error('진행률 업데이트 오류:', error);
+                }
+            }
+
+            shuffleArray(array) {
+                try {
+                    const shuffled = [...array];
+                    for (let i = shuffled.length - 1; i > 0; i--) {
+                        const j = Math.floor(Math.random() * (i + 1));
+                        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+                    }
+                    return shuffled;
+                } catch (error) {
+                    console.error('배열 섞기 오류:', error);
+                    return array; // 오류 시 원본 배열 반환
+                }
+            }
+        }
+
+        // 앱 시작
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                new InfiniteRepeatApp();
+            } catch (error) {
+                console.error('앱 시작 오류:', error);
+                alert('앱을 시작할 수 없습니다: ' + error.message);
+            }
+        });
+
+        // 전역 오류 처리
+        window.addEventListener('error', (event) => {
+            console.error('전역 오류:', event.error);
+            const errorDiv = document.getElementById('error-message');
+            const errorText = document.getElementById('error-text');
+            if (errorDiv && errorText) {
+                errorText.textContent = '예상치 못한 오류가 발생했습니다: ' + event.error.message;
+                errorDiv.classList.remove('hidden');
+            }
+        });
+
+        // Promise 거부 처리
+        window.addEventListener('unhandledrejection', (event) => {
+            console.error('처리되지 않은 Promise 거부:', event.reason);
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>

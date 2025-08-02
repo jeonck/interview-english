@@ -1,0 +1,107 @@
+{
+  "category": {
+    "id": "strengths",
+    "name": "강점과 성격",
+    "emoji": "⭐"
+  },
+  "sentences": [
+    {
+      "id": "st001",
+      "korean": "저의 강점은 문제 해결 능력입니다.",
+      "english": "My strength is problem solving.",
+      "difficulty": "medium",
+      "tags": ["strength", "problem-solving"]
+    },
+    {
+      "id": "st002",
+      "korean": "저는 책임감이 강한 사람입니다.",
+      "english": "I'm a highly responsible person.",
+      "difficulty": "medium",
+      "tags": ["responsibility", "character"]
+    },
+    {
+      "id": "st003",
+      "korean": "저는 마감 기한을 잘 지킵니다.",
+      "english": "I always meet deadlines.",
+      "difficulty": "easy",
+      "tags": ["deadline", "punctuality"]
+    },
+    {
+      "id": "st004",
+      "korean": "저는 팀워크를 중시합니다.",
+      "english": "I value teamwork.",
+      "difficulty": "easy",
+      "tags": ["teamwork", "value"]
+    },
+    {
+      "id": "st005",
+      "korean": "저는 빠르게 배우는 편입니다.",
+      "english": "I'm a fast learner.",
+      "difficulty": "easy",
+      "tags": ["learning", "quick"]
+    },
+    {
+      "id": "st006",
+      "korean": "저는 목표 지향적인 성격입니다.",
+      "english": "I'm goal oriented.",
+      "difficulty": "medium",
+      "tags": ["goal", "oriented"]
+    },
+    {
+      "id": "st007",
+      "korean": "저는 변화에 유연하게 대처할 수 있습니다.",
+      "english": "I adapt well to change.",
+      "difficulty": "medium",
+      "tags": ["adaptability", "change"]
+    },
+    {
+      "id": "st008",
+      "korean": "저는 고객 중심적 사고를 합니다.",
+      "english": "I have a customer oriented mindset.",
+      "difficulty": "hard",
+      "tags": ["customer", "mindset"]
+    },
+    {
+      "id": "st009",
+      "korean": "저는 상황에 따라 대응하는 것을 좋아해요.",
+      "english": "I like to respond according to the situation.",
+      "difficulty": "medium",
+      "tags": ["flexibility", "adaptability", "response"]
+    },
+    {
+      "id": "st010",
+      "korean": "저는 수완이 좋은 사람입니다.",
+      "english": "I am a resourceful person.",
+      "difficulty": "medium",
+      "tags": ["resourceful", "problem-solving", "creativity"]
+    },
+    {
+      "id": "st011",
+      "korean": "저는 완전히 집중해서 오랜시간 일할 수 있습니다.",
+      "english": "I can work with complete concentration for long periods.",
+      "difficulty": "medium",
+      "tags": ["concentration", "endurance", "focus"]
+    },
+    {
+      "id": "st012",
+      "korean": "저는 환한 고객들을 잘 다뤄요.",
+      "english": "I handle difficult customers well.",
+      "difficulty": "medium",
+      "tags": ["customer-service", "patience", "communication"]
+    },
+    {
+      "id": "st013",
+      "korean": "저는 의사소통을 잘하는 사람입니다.",
+      "english": "I am a good communicator.",
+      "difficulty": "medium",
+      "tags": ["communication", "interpersonal", "skills"]
+    },
+    {
+      "id": "st014",
+      "korean": "저는 누구하고도 이야기할 수 있습니다.",
+      "english": "I can talk to anyone.",
+      "difficulty": "easy",
+      "tags": ["social-skills", "confidence", "approachable"]
+    }
+  ]
+}

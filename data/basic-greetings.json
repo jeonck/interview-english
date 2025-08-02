@@ -1,0 +1,44 @@
+{
+  "category": {
+    "id": "basic-greetings",
+    "name": "면접 기본 인사",
+    "emoji": "👋"
+  },
+  "sentences": [
+    {
+      "id": "bg001",
+      "korean": "면접 기회를 주셔서 감사합니다.",
+      "english": "Thank you for giving me this opportunity.",
+      "difficulty": "easy",
+      "tags": ["gratitude", "opportunity"]
+    },
+    {
+      "id": "bg002", 
+      "korean": "만나 뵙게 되어 반갑습니다.",
+      "english": "It's a pleasure to meet you.",
+      "difficulty": "easy",
+      "tags": ["greeting", "pleasure"]
+    },
+    {
+      "id": "bg003",
+      "korean": "저는 김지훈입니다.",
+      "english": "My name is Kim Ji-hoon.",
+      "difficulty": "easy",
+      "tags": ["name", "introduction"]
+    },
+    {
+      "id": "bg004",
+      "korean": "이 자리에 있게 되어 영광입니다.",
+      "english": "It's an honor to be here.",
+      "difficulty": "easy",
+      "tags": ["honor", "gratitude", "formal"]
+    },
+    {
+      "id": "bg005",
+      "korean": "먼저 면접 기회를 주셔서 감사합니다.",
+      "english": "First, thank you for giving me this interview opportunity.",
+      "difficulty": "easy",
+      "tags": ["gratitude", "opportunity", "formal"]
+    }
+  ]
+}

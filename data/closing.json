@@ -1,0 +1,51 @@
+{
+  "category": {
+    "id": "closing",
+    "name": "마무리 인사",
+    "emoji": "👏"
+  },
+  "sentences": [
+    {
+      "id": "cl001",
+      "korean": "오늘 면접 정말 감사드립니다.",
+      "english": "Thank you so much for the interview today.",
+      "difficulty": "easy",
+      "tags": ["gratitude", "interview", "closing"]
+    },
+    {
+      "id": "cl002",
+      "korean": "귀한 시간 내주셔서 감사합니다.",
+      "english": "I appreciate your time.",
+      "difficulty": "easy",
+      "tags": ["appreciation", "time"]
+    },
+    {
+      "id": "cl003",
+      "korean": "긍정적인 결과를 기대하겠습니다.",
+      "english": "I look forward to hearing from you.",
+      "difficulty": "medium",
+      "tags": ["expectation", "positive", "result"]
+    },
+    {
+      "id": "cl004",
+      "korean": "추가 정보가 필요하시면 알려주세요.",
+      "english": "Please let me know if you need any additional information.",
+      "difficulty": "hard",
+      "tags": ["additional", "information", "offer"]
+    },
+    {
+      "id": "cl005",
+      "korean": "이 자리를 꼭 얻고 싶습니다.",
+      "english": "I really want this opportunity.",
+      "difficulty": "easy",
+      "tags": ["desire", "opportunity", "enthusiasm"]
+    },
+    {
+      "id": "cl006",
+      "korean": "좋은 하루 되세요.",
+      "english": "Have a great day.",
+      "difficulty": "easy",
+      "tags": ["farewell", "wish", "day"]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "category": {
+    "id": "teamwork",
+    "name": "팀워크와 협업",
+    "emoji": "🤝"
+  },
+  "sentences": [
+    {
+      "id": "tw001",
+      "korean": "팀워크를 매우 중요하게 생각합니다.",
+      "english": "I place a high value on teamwork.",
+      "difficulty": "medium",
+      "tags": ["teamwork", "value", "importance"]
+    },
+    {
+      "id": "tw002",
+      "korean": "저는 열린 커뮤니케이션을 추구합니다.",
+      "english": "I promote open communication.",
+      "difficulty": "hard",
+      "tags": ["communication", "open", "promote"]
+    },
+    {
+      "id": "tw003",
+      "korean": "갈등 상황을 중재한 경험이 있습니다.",
+      "english": "I have mediated conflict situations.",
+      "difficulty": "hard",
+      "tags": ["conflict", "mediation", "experience"]
+    },
+    {
+      "id": "tw004",
+      "korean": "회의에서 적극적으로 의견을 제시합니다.",
+      "english": "I actively share my ideas in meetings.",
+      "difficulty": "medium",
+      "tags": ["meetings", "ideas", "active"]
+    },
+    {
+      "id": "tw005",
+      "korean": "다양한 문화권 사람들과 일한 경험이 있습니다.",
+      "english": "I've worked with people from different cultures.",
+      "difficulty": "hard",
+      "tags": ["multicultural", "diversity", "experience"]
+    }
+  ]
+}

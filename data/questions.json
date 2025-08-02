@@ -1,0 +1,51 @@
+{
+  "category": {
+    "id": "questions",
+    "name": "면접 질문들",
+    "emoji": "❓"
+  },
+  "sentences": [
+    {
+      "id": "qs001",
+      "korean": "본인의 장점은 무엇인가요?",
+      "english": "What are your strengths?",
+      "difficulty": "easy",
+      "tags": ["question", "strengths"]
+    },
+    {
+      "id": "qs002",
+      "korean": "약점은 무엇인가요?",
+      "english": "What is your biggest weakness?",
+      "difficulty": "easy",
+      "tags": ["question", "weakness"]
+    },
+    {
+      "id": "qs003",
+      "korean": "가장 어려웠던 경험은 무엇인가요?",
+      "english": "What was your biggest challenge?",
+      "difficulty": "medium",
+      "tags": ["question", "challenge"]
+    },
+    {
+      "id": "qs004",
+      "korean": "그 상황을 어떻게 극복했나요?",
+      "english": "How did you overcome that situation?",
+      "difficulty": "medium",
+      "tags": ["question", "overcome", "situation"]
+    },
+    {
+      "id": "qs005",
+      "korean": "이전 직장을 왜 떠났나요?",
+      "english": "Why did you leave your previous job?",
+      "difficulty": "medium",
+      "tags": ["question", "previous-job", "leaving"]
+    },
+    {
+      "id": "qs006",
+      "korean": "향후 5년 계획은 어떻게 되나요?",
+      "english": "What are your five-year plans?",
+      "difficulty": "medium",
+      "tags": ["question", "future", "plans"]
+    }
+  ]
+}

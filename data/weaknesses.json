@@ -1,0 +1,44 @@
+{
+  "category": {
+    "id": "weaknesses",
+    "name": "약점과 개선점",
+    "emoji": "🔧"
+  },
+  "sentences": [
+    {
+      "id": "wk001",
+      "korean": "완벽주의 성향이 있습니다.",
+      "english": "I tend to be a perfectionist.",
+      "difficulty": "hard",
+      "tags": ["perfectionist", "tendency"]
+    },
+    {
+      "id": "wk002",
+      "korean": "때로 너무 많은 책임을 맡습니다.",
+      "english": "I sometimes take on too much responsibility.",
+      "difficulty": "hard",
+      "tags": ["responsibility", "overwork"]
+    },
+    {
+      "id": "wk003",
+      "korean": "발표에 대한 긴장감을 극복 중입니다.",
+      "english": "I'm working on improving my public speaking.",
+      "difficulty": "hard",
+      "tags": ["public-speaking", "improvement"]
+    },
+    {
+      "id": "wk004",
+      "korean": "피드백을 적극적으로 수용합니다.",
+      "english": "I actively accept feedback.",
+      "difficulty": "medium",
+      "tags": ["feedback", "accept"]
+    },
+    {
+      "id": "wk005",
+      "korean": "실수를 통해 배우려 노력합니다.",
+      "english": "I try to learn from my mistakes.",
+      "difficulty": "medium",
+      "tags": ["mistakes", "learning"]
+    }
+  ]
+}

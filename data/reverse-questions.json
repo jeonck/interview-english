@@ -1,0 +1,44 @@
+{
+  "category": {
+    "id": "reverse-questions",
+    "name": "역질문",
+    "emoji": "🙋"
+  },
+  "sentences": [
+    {
+      "id": "rq001",
+      "korean": "우리 회사에 대해 아는 점이 있나요?",
+      "english": "What do you know about our company?",
+      "difficulty": "easy",
+      "tags": ["reverse-question", "company", "knowledge"]
+    },
+    {
+      "id": "rq002",
+      "korean": "이 직무의 하루 일과는 어떻게 되나요?",
+      "english": "What does a typical day in this role look like?",
+      "difficulty": "hard",
+      "tags": ["reverse-question", "daily-work", "role"]
+    },
+    {
+      "id": "rq003",
+      "korean": "팀 구조에 대해 설명해 주실 수 있나요?",
+      "english": "Can you tell me about the team structure?",
+      "difficulty": "medium",
+      "tags": ["reverse-question", "team", "structure"]
+    },
+    {
+      "id": "rq004",
+      "korean": "성장 기회는 어떤가요?",
+      "english": "What are the opportunities for growth?",
+      "difficulty": "medium",
+      "tags": ["reverse-question", "growth", "opportunities"]
+    },
+    {
+      "id": "rq005",
+      "korean": "회사의 문화는 어떤가요?",
+      "english": "How would you describe the company culture?",
+      "difficulty": "hard",
+      "tags": ["reverse-question", "culture", "company"]
+    }
+  ]
+}

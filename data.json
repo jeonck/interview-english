@@ -1,0 +1,1247 @@
+{
+  "categories": [
+    {
+      "name": "면접 기본 인사",
+      "sentences": [
+        {
+          "korean": "이 자리에 있게 되어 영광입니다.",
+          "english": "I'm honored to be here."
+        },
+        {
+          "korean": "면접 기회를 주셔서 감사합니다.",
+          "english": "Thank you for giving me this opportunity."
+        },
+        {
+          "korean": "만나 뵙게 되어 반갑습니다.",
+          "english": "It's a pleasure to meet you."
+        },
+        {
+          "korean": "저는 김지훈입니다.",
+          "english": "My name is Kim Ji-hoon."
+        },
+        {
+          "korean": "여기 있게 되어 매우 기쁩니다.",
+          "english": "I am more than happy to be here."
+        },
+        {
+          "korean": "여기 있게 되어 기쁩니다.",
+          "english": "I am pleased to be here."
+        }
+      ]
+    },
+    {
+      "name": "자기소개",
+      "sentences": [
+        {
+          "korean": "자기소개를 해주실 수 있나요?",
+          "english": "Can you introduce yourself?"
+        },
+        {
+          "korean": "자기소개를 해주세요.",
+          "english": "Tell me about yourself."
+        },
+        {
+          "korean": "간단히 자기소개를 해주세요.",
+          "english": "Please briefly introduce yourself."
+        },
+        {
+          "korean": "본인을 어떻게 설명하시겠습니까?",
+          "english": "How would you describe yourself?"
+        },
+        {
+          "korean": "제 전공은 경영학입니다.",
+          "english": "I majored in business administration."
+        },
+        {
+          "korean": "저는 마케팅 분야에서 3년의 경험이 있습니다.",
+          "english": "I have three years of experience in marketing."
+        },
+        {
+          "korean": "졸업 후 XYZ 기업에서 인턴십을 시작했습니다.",
+          "english": "After graduation, I started an internship at XYZ corporation."
+        },
+        {
+          "korean": "저는 삼성전자에서 일한 경험이 있습니다.",
+          "english": "I worked at Samsung Electronics."
+        },
+        {
+          "korean": "제 전공은 경제학입니다.",
+          "english": "I majored in economics at University."
+        },
+        {
+          "korean": "저는 현재 회계학을 전공하고 있습니다.",
+          "english": "I am majoring in accounting at University."
+        },
+        {
+          "korean": "저는 구글에서 2년간 일했습니다.",
+          "english": "I worked at Google for two years."
+        },
+        {
+          "korean": "저는 삼성에서 3개월간 인턴을 했습니다.",
+          "english": "I interned at Samsung for three months."
+        },
+        {
+          "korean": "저는 MOS 자격증을 보유하고 있습니다.",
+          "english": "I have MOS certification."
+        },
+        {
+          "korean": "당신의 대학교에 대해 말해주세요.",
+          "english": "Tell me about your University."
+        },
+        {
+          "korean": "학교에서의 성과는 무엇이었나요?",
+          "english": "What were your accomplishments at school?"
+        }
+      ]
+    },
+    {
+      "name": "지원 동기",
+      "sentences": [
+        {
+          "korean": "왜 이 포지션에 지원했나요?",
+          "english": "Why do you want to apply for this position?"
+        },
+        {
+          "korean": "왜 이 회사에 지원했나요?",
+          "english": "Why do you want to apply for this company?"
+        },
+        {
+          "korean": "왜 여기서 일하고 싶나요?",
+          "english": "Why do you want to work here?"
+        },
+        {
+          "korean": "우리 회사가 왜 흥미로운가요?",
+          "english": "Why is our company interesting to you?"
+        },
+        {
+          "korean": "우리 회사에 대해 무엇을 알고 계시나요?",
+          "english": "What do you know about our company?"
+        },
+        {
+          "korean": "이 역할에서 무엇이 흥미로운가요?",
+          "english": "What interests you about this role?"
+        },
+        {
+          "korean": "저는 외국에서 일하길 원했어요.",
+          "english": "I wanted to work abroad."
+        },
+        {
+          "korean": "제 시야를 넓히기 위해 이곳으로 왔어요.",
+          "english": "I came here to broaden my horizons."
+        },
+        {
+          "korean": "더 많은 경험을 쌓기 위해 이곳으로 왔습니다.",
+          "english": "I came here to gain more experience."
+        },
+        {
+          "korean": "새로운 도전이 필요해서 이전 직장을 그만뒀어요.",
+          "english": "I left my previous job because I needed a new challenge."
+        },
+        {
+          "korean": "마케팅 분야에서 제 경력을 발전시키고 싶습니다.",
+          "english": "I really want to advance my career in marketing."
+        },
+        {
+          "korean": "영업 분야에서 제 경력을 발전시키고 싶습니다.",
+          "english": "I really want to advance my career in sales."
+        },
+        {
+          "korean": "앱 개발 분야에서 제 경력을 발전시키고 싶습니다.",
+          "english": "I really want to advance my career in app development."
+        },
+        {
+          "korean": "이 회사에 지원한 이유는 지속 가능한 경영에 끌렸기 때문입니다.",
+          "english": "I applied because I was drawn to your focus on sustainability."
+        },
+        {
+          "korean": "이 회사는 혁신적이라 생각합니다.",
+          "english": "I believe this company is very innovative."
+        },
+        {
+          "korean": "귀사의 비전에 깊이 공감합니다.",
+          "english": "I strongly resonate with your company's vision."
+        },
+        {
+          "korean": "이 산업에 오래 전부터 관심이 있었습니다.",
+          "english": "I've been interested in this industry for a long time."
+        },
+        {
+          "korean": "이 포지션이 제 커리어 목표와 잘 맞습니다.",
+          "english": "This position aligns well with my career goals."
+        },
+        {
+          "korean": "이 회사는 신뢰라는 가치를 추구하며 매우 인상적이었습니다.",
+          "english": "This company pursues the value of trust and I was very impressed."
+        },
+        {
+          "korean": "이 분야에서 인상적인 회사들을 찾아보다가 이 회사를 알게 되었습니다.",
+          "english": "I got to know this company when I was searching for impressive companies in this field."
+        },
+        {
+          "korean": "귀사에 대한 훌륭한 평판과 잠재력에 대해 많은 좋은 이야기를 들었습니다.",
+          "english": "I've heard many good things about your company including its excellent reputation and potential."
+        },
+        {
+          "korean": "회사에 대해 더 알아갈수록 매혹되었습니다.",
+          "english": "As I got to know more about the company I was fascinated."
+        },
+        {
+          "korean": "귀사의 철학은 제 철학과 일치합니다.",
+          "english": "Your company's philosophy matches my philosophy."
+        }
+      ]
+    },
+    {
+      "name": "전공과 직업 선택",
+      "sentences": [
+        {
+          "korean": "왜 이 전공을 선택했나요?",
+          "english": "Why did you choose this major?"
+        },
+        {
+          "korean": "왜 이 직업을 선택했나요?",
+          "english": "Why did you choose this career?"
+        },
+        {
+          "korean": "저는 고객을 행복하게 만드는 데 열정이 있습니다.",
+          "english": "I'm passionate about making customers happy."
+        },
+        {
+          "korean": "저는 국제무역에 매우 열정적입니다.",
+          "english": "I'm passionate about international trade."
+        },
+        {
+          "korean": "저는 이 전공을 선택했습니다.",
+          "english": "I chose this major because I'm passionate about it."
+        },
+        {
+          "korean": "저는 이 분야를 선택했습니다.",
+          "english": "I chose this career because I'm passionate about it."
+        },
+        {
+          "korean": "제 인생 철학은 내가 좋아하는 것을 하자입니다.",
+          "english": "My life philosophy is to do what I love."
+        }
+      ]
+    },
+    {
+      "name": "적응력과 학습",
+      "sentences": [
+        {
+          "korean": "저는 새로운 업무 환경에 아주 잘 적응합니다.",
+          "english": "I adapt very well to new work environments."
+        },
+        {
+          "korean": "새로운 것을 배우는 걸 좋아합니다.",
+          "english": "I love learning new things."
+        },
+        {
+          "korean": "저는 상황에 따라 대응하는 것을 좋아해요.",
+          "english": "I like adapting to different situations."
+        },
+        {
+          "korean": "저는 제 영어 실력을 보다 향상시킬 수 있다고 믿습니다.",
+          "english": "I believe I can improve my English skills further."
+        },
+        {
+          "korean": "영어에 능숙해지도록 최선을 다할 것입니다.",
+          "english": "I will do my best to become proficient in English."
+        }
+      ]
+    },
+    {
+      "name": "경력과 경험",
+      "sentences": [
+        {
+          "korean": "과거 업무 경험은 무엇인가요?",
+          "english": "What is your past work experience?"
+        },
+        {
+          "korean": "업무 경험에 대해 말해주실 수 있나요?",
+          "english": "Can you tell me about your work experience?"
+        },
+        {
+          "korean": "어떤 일과 경험이 현재의 포지션으로 이끌었나요?",
+          "english": "What jobs and experiences have led you to your present position?"
+        },
+        {
+          "korean": "이전 포지션에서의 성과에 대해 말해주세요.",
+          "english": "Tell me about your achievements at your previous position."
+        },
+        {
+          "korean": "현재 직무에서의 책임은 무엇인가요?",
+          "english": "What are your responsibilities at your current job?"
+        },
+        {
+          "korean": "왜 이전 회사를 떠났나요?",
+          "english": "Why did you leave your previous company?"
+        },
+        {
+          "korean": "왜 현재 직장을 떠나려고 하나요?",
+          "english": "Why are you leaving your current job?"
+        },
+        {
+          "korean": "왜 직업을 바꾸려고 하나요?",
+          "english": "Why are you changing careers?"
+        },
+        {
+          "korean": "이력서의 공백 기간을 설명해 주실 수 있나요?",
+          "english": "Can you explain these gaps in your resume?"
+        },
+        {
+          "korean": "이력서를 보시다시피 저는 대학 때 몇몇 알바를 했었습니다.",
+          "english": "As you can see from my resume, I had several part-time jobs in college."
+        },
+        {
+          "korean": "저는 식당에서 아르바이트 했어요.",
+          "english": "I worked part-time at a restaurant."
+        },
+        {
+          "korean": "이런 경험들은 제가 다른 사람들과 잘 어울릴 수 있는 방법을 알려줬어요.",
+          "english": "These experiences taught me how to get along well with others."
+        },
+        {
+          "korean": "저는 좀 더 다재다능해지는 법을 배웠습니다.",
+          "english": "I learned how to become more versatile."
+        },
+        {
+          "korean": "저는 프론트엔드 개발자로 3년 동안 일한 경험이 있습니다.",
+          "english": "I have three years experience working as a frontend developer."
+        },
+        {
+          "korean": "저는 마케터로 3년 동안 일한 경험이 있습니다.",
+          "english": "I have three years experience working as a marketer."
+        },
+        {
+          "korean": "저는 마케터로 10년 동안 일한 경험이 있습니다.",
+          "english": "I have ten years experience working as a marketer."
+        },
+        {
+          "korean": "제 커리어에서 다음 도전을 할 준비가 되어 있습니다.",
+          "english": "I'm ready for the next challenge in my career."
+        },
+        {
+          "korean": "이전 직장에서 마케팅 캠페인을 주도했습니다.",
+          "english": "I led a marketing campaign in my previous job."
+        },
+        {
+          "korean": "판매율을 20% 증가시킨 경험이 있습니다.",
+          "english": "I helped increase sales by 20%."
+        },
+        {
+          "korean": "저는 연매출을 15% 증가시켰어요.",
+          "english": "I increased annual sales by 15%."
+        },
+        {
+          "korean": "프로젝트 팀장 역할을 수행했습니다.",
+          "english": "I served as the project lead."
+        },
+        {
+          "korean": "고객 데이터 분석을 맡았습니다.",
+          "english": "I was in charge of analyzing customer data."
+        },
+        {
+          "korean": "예산 관리를 담당했습니다.",
+          "english": "I was responsible for budget management."
+        },
+        {
+          "korean": "주간 보고서를 작성했습니다.",
+          "english": "I prepared weekly reports."
+        }
+      ]
+    },
+    {
+      "name": "강점과 성격",
+      "sentences": [
+        {
+          "korean": "당신의 가장 큰 강점은 무엇인가요?",
+          "english": "What is your greatest strength?"
+        },
+        {
+          "korean": "당신의 강점과 약점은 무엇인가요?",
+          "english": "What are your weaknesses and strengths?"
+        },
+        {
+          "korean": "당신의 전문적인 강점은 무엇이라고 생각하나요?",
+          "english": "What do you think are your professional strengths?"
+        },
+        {
+          "korean": "당신의 성격을 어떻게 설명하겠습니까?",
+          "english": "How do you describe your personality?"
+        },
+        {
+          "korean": "저는 정열적인 사람입니다.",
+          "english": "I'm a passionate person."
+        },
+        {
+          "korean": "저는 수완이 좋은 사람입니다.",
+          "english": "I'm a resourceful person."
+        },
+        {
+          "korean": "제 핵심 강점은 자기 동기부여입니다.",
+          "english": "My key strength is self-motivation."
+        },
+        {
+          "korean": "저의 강점은 문제 해결 능력입니다.",
+          "english": "My strength is problem solving."
+        },
+        {
+          "korean": "저는 책임감이 강한 사람입니다.",
+          "english": "I'm a highly responsible person."
+        },
+        {
+          "korean": "저는 마감 기한을 잘 지킵니다.",
+          "english": "I always meet deadlines."
+        },
+        {
+          "korean": "저는 팀워크를 중시합니다.",
+          "english": "I value teamwork."
+        },
+        {
+          "korean": "저는 빠르게 배우는 편입니다.",
+          "english": "I'm a fast learner."
+        },
+        {
+          "korean": "저는 목표 지향적인 성격입니다.",
+          "english": "I'm goal oriented."
+        },
+        {
+          "korean": "저는 변화에 유연하게 대처할 수 있습니다.",
+          "english": "I adapt well to change."
+        },
+        {
+          "korean": "저는 고객 중심적 사고를 합니다.",
+          "english": "I have a customer oriented mindset."
+        },
+        {
+          "korean": "저는 외향적인 사람입니다.",
+          "english": "I am an outgoing person."
+        },
+        {
+          "korean": "저는 세심한 사람입니다.",
+          "english": "I am a detailed person."
+        },
+        {
+          "korean": "저는 창의적인 사람입니다.",
+          "english": "I am a creative person."
+        },
+        {
+          "korean": "해외여행 중 많은 사람들과 소통한 경험을 통해 외향적인 사람이 되었습니다.",
+          "english": "Through my experience of communicating with many people while traveling abroad I became an outgoing person."
+        },
+        {
+          "korean": "저는 새로운 것에 도전하는 것을 즐깁니다.",
+          "english": "I enjoy trying and challenging new things."
+        },
+        {
+          "korean": "제 성격을 '에너자이저'라는 단어로 정의할 수 있습니다.",
+          "english": "I can define my personality with the word Energizer."
+        },
+        {
+          "korean": "제 강점은 좋은 커뮤니케이션 스킬입니다.",
+          "english": "My strength is good communication skills."
+        },
+        {
+          "korean": "저는 좋은 커뮤니케이션 스킬을 제 강점으로 생각합니다.",
+          "english": "I consider good communication skills as my strength."
+        },
+        {
+          "korean": "저는 협상할 때 항상 좋은 결과를 만들어냅니다.",
+          "english": "I always make good results when I do negotiations."
+        },
+        {
+          "korean": "저는 항상 고객과 좋은 협상을 하기 위해 최선을 다합니다.",
+          "english": "I always put my utmost effort to make good negotiations with clients."
+        },
+        {
+          "korean": "저는 다른 사람의 상황에 공감하는 것을 잘합니다.",
+          "english": "I am good at empathizing with other people's situations."
+        },
+        {
+          "korean": "저는 의사소통을 잘하는 사람입니다.",
+          "english": "I'm good at communication."
+        },
+        {
+          "korean": "저는 누구하고도 이야기할 수 있습니다.",
+          "english": "I can talk to anyone."
+        },
+        {
+          "korean": "저의 장점은 대인관계 기술입니다.",
+          "english": "My strength is interpersonal skills."
+        }
+      ]
+    },
+    {
+      "name": "약점과 개선점",
+      "sentences": [
+        {
+          "korean": "당신의 가장 큰 약점은 무엇인가요?",
+          "english": "What is your biggest weakness?"
+        },
+        {
+          "korean": "직장에서 당신의 가장 큰 약점은 무엇이라고 생각하나요?",
+          "english": "What do you consider your biggest weakness in the workplace?"
+        },
+        {
+          "korean": "제 단점 중 하나는 기준이 너무 높다는 것이에요.",
+          "english": "One of my shortcomings is that my standards are too high."
+        },
+        {
+          "korean": "제 약점은 능력 이상의 일을 하려고 하는 경향이 있다는 것입니다.",
+          "english": "My weakness is that I tend to try to do more than I'm capable of."
+        },
+        {
+          "korean": "저는 제 일에 대한 소유욕이 강한 편이에요.",
+          "english": "I have a strong sense of ownership over my work."
+        },
+        {
+          "korean": "저는 가끔 완벽주의로 인해 애를 먹습니다.",
+          "english": "I sometimes struggle with perfectionism."
+        },
+        {
+          "korean": "현실적인 목표와 시간 관리 설정을 연습해왔습니다.",
+          "english": "I have been practicing setting realistic goals and time management."
+        },
+        {
+          "korean": "완벽주의 성향이 있습니다.",
+          "english": "I tend to be a perfectionist."
+        },
+        {
+          "korean": "때로 너무 많은 책임을 맡습니다.",
+          "english": "I sometimes take on too much responsibility."
+        },
+        {
+          "korean": "발표에 대한 긴장감을 극복 중입니다.",
+          "english": "I'm working on improving my public speaking."
+        },
+        {
+          "korean": "피드백을 적극적으로 수용합니다.",
+          "english": "I actively accept feedback."
+        },
+        {
+          "korean": "실수를 통해 배우려 노력합니다.",
+          "english": "I try to learn from my mistakes."
+        },
+        {
+          "korean": "제 약점은 세부사항에 너무 집중하는 것입니다.",
+          "english": "My weakness is focusing too much on the details."
+        },
+        {
+          "korean": "세부사항에 너무 집중하는 것을 제 약점으로 생각합니다.",
+          "english": "I consider focusing too much on the details as my weakness."
+        },
+        {
+          "korean": "가끔 긴장하지만 철저한 준비를 통해 극복하려고 노력합니다.",
+          "english": "Although I get nervous sometimes I try to overcome it by doing a thorough preparation."
+        }
+      ]
+    },
+    {
+      "name": "업무 능력과 집중력",
+      "sentences": [
+        {
+          "korean": "저는 완전히 집중해서 오랜시간 일할 수 있습니다.",
+          "english": "I can work with complete concentration for long periods."
+        },
+        {
+          "korean": "저는 어려운 고객들을 잘 대해요.",
+          "english": "I handle difficult customers well."
+        },
+        {
+          "korean": "저의 대인관계 기술로 어려운 고객을 잘 다뤘습니다.",
+          "english": "I handled difficult customers well with my interpersonal skills."
+        },
+        {
+          "korean": "저의 멀티태스킹 능력이 매우 도움될 거라고 생각해요.",
+          "english": "I think my multitasking ability will be very helpful."
+        },
+        {
+          "korean": "저는 마케팅이 고객관리와 어느 정도 연관이 있다고 생각합니다.",
+          "english": "I think marketing is somewhat related to customer management."
+        },
+        {
+          "korean": "저는 다른 사람들의 입장에서 보려고 노력합니다.",
+          "english": "I try to see things from other people's perspectives."
+        },
+        {
+          "korean": "저는 고객들에게 최상의 서비스를 제공하는 방법을 배웠습니다.",
+          "english": "I learned how to provide the best service to customers."
+        },
+        {
+          "korean": "제가 배운 문제해결 기술을 적극 활용할 수 있을 것이라고 확신합니다.",
+          "english": "I'm confident I can actively utilize the problem-solving skills I've learned."
+        },
+        {
+          "korean": "저는 그것을 모두 해내는데 적격인 사람입니다.",
+          "english": "I'm the right person to accomplish all of that."
+        }
+      ]
+    },
+    {
+      "name": "기술과 능력",
+      "sentences": [
+        {
+          "korean": "어떤 전문 기술을 가지고 있나요?",
+          "english": "What professional skills do you have?"
+        },
+        {
+          "korean": "당신의 커뮤니케이션 스킬을 어떻게 설명하겠습니까?",
+          "english": "How would you describe your communication skills?"
+        },
+        {
+          "korean": "스킬을 향상시키기 위해 무엇을 하고 계시나요?",
+          "english": "Are you doing anything to improve your skills?"
+        },
+        {
+          "korean": "데이터 분석에 능숙합니다.",
+          "english": "I'm proficient in data analysis."
+        },
+        {
+          "korean": "영어로 업무를 수행할 수 있습니다.",
+          "english": "I can work in English."
+        },
+        {
+          "korean": "저는 빠르게 새로운 기술을 익힐 수 있습니다.",
+          "english": "I can quickly learn new tools."
+        },
+        {
+          "korean": "협업 도구 사용에 익숙합니다.",
+          "english": "I'm familiar with collaboration tools."
+        },
+        {
+          "korean": "경제학을 전공한 배경이 이 포지션에 적합한 후보자로 만들어줍니다.",
+          "english": "My background of majoring in economics makes me a suitable candidate for this position."
+        }
+      ]
+    },
+    {
+      "name": "팀워크와 협업",
+      "sentences": [
+        {
+          "korean": "팀워크를 어떻게 보십니까?",
+          "english": "How do you view teamwork?"
+        },
+        {
+          "korean": "직장에서 팀워크와 협력에 대한 생각은 어떠한가요?",
+          "english": "What are your thoughts on teamwork and collaboration in the workplace?"
+        },
+        {
+          "korean": "과거에 팀의 일원으로 성공적으로 일한 예를 들어주실 수 있나요?",
+          "english": "Can you provide an example of how you have successfully worked as part of a team in the past?"
+        },
+        {
+          "korean": "팀 프로젝트를 이끈 적이 있나요? 그렇다면 리더십 스타일을 설명해 주실 수 있나요?",
+          "english": "Have you ever had to lead a team project? If so, can you describe your leadership style?"
+        },
+        {
+          "korean": "팀워크를 매우 중요하게 생각합니다.",
+          "english": "I place a high value on teamwork."
+        },
+        {
+          "korean": "저는 열린 커뮤니케이션을 추구합니다.",
+          "english": "I promote open communication."
+        },
+        {
+          "korean": "갈등 상황을 중재한 경험이 있습니다.",
+          "english": "I have mediated conflict situations."
+        },
+        {
+          "korean": "회의에서 적극적으로 의견을 제시합니다.",
+          "english": "I actively share my ideas in meetings."
+        },
+        {
+          "korean": "다양한 문화권 사람들과 일한 경험이 있습니다.",
+          "english": "I've worked with people from different cultures."
+        },
+        {
+          "korean": "저는 직장에서 상호 존중을 중시합니다.",
+          "english": "I value mutual respect in the workplace."
+        },
+        {
+          "korean": "저는 동료들과 문제를 겪은 적이 거의 없습니다.",
+          "english": "I have rarely had any trouble with co-workers."
+        },
+        {
+          "korean": "팀워크는 제가 가장 잘 발휘되는 분야입니다.",
+          "english": "Working together as a team is where I thrive."
+        },
+        {
+          "korean": "다른 사람들과 잘 협력하는 것이 제 업무 우선순위입니다.",
+          "english": "It is my work priority to cooperate well with others."
+        },
+        {
+          "korean": "제 명확한 커뮤니케이션 스킬은 어떤 팀에서든 최고의 결과를 이끌어냅니다.",
+          "english": "My clear communication skills bring out the best in any team."
+        }
+      ]
+    },
+    {
+      "name": "리더십",
+      "sentences": [
+        {
+          "korean": "당신의 리더십 스킬을 어떻게 설명하겠습니까?",
+          "english": "How would you describe your leadership skills?"
+        },
+        {
+          "korean": "당신의 관리 스타일은 무엇인가요?",
+          "english": "What is your managerial style?"
+        },
+        {
+          "korean": "새로운 직원을 교육한 경험을 설명해 주실 수 있나요?",
+          "english": "Can you describe your experience with training new employees?"
+        },
+        {
+          "korean": "고객이나 팀 멤버를 돕기 위해 직무 범위를 벗어나 일했던 경험을 설명해 주실 수 있나요?",
+          "english": "Can you describe a time when you had to work outside of your job description to assist a customer or team member?"
+        }
+      ]
+    },
+    {
+      "name": "스트레스와 압박감 관리",
+      "sentences": [
+        {
+          "korean": "업무 압박감을 어떻게 다루나요?",
+          "english": "How do you handle work pressure?"
+        },
+        {
+          "korean": "스트레스나 스트레스 상황을 어떻게 다루나요?",
+          "english": "How do you handle stress or stressful situations?"
+        },
+        {
+          "korean": "스트레스와 압박감을 어떻게 다루나요?",
+          "english": "How do you handle stress and pressure?"
+        },
+        {
+          "korean": "압박감 하에서 어떻게 일하나요?",
+          "english": "How do you work under pressure?"
+        },
+        {
+          "korean": "빠른 속도의 업무 환경에서 스트레스와 압박감을 어떻게 다루나요?",
+          "english": "How do you handle stress and pressure in a fast-paced work environment?"
+        },
+        {
+          "korean": "직장에서 스트레스가 많은 상황을 어떻게 다루나요?",
+          "english": "How do you handle stressful situations on the job?"
+        },
+        {
+          "korean": "타이트한 마감일과 과중한 업무량을 어떻게 처리하나요?",
+          "english": "How do you handle tight deadlines and a heavy workload?"
+        },
+        {
+          "korean": "저는 보통 휴식과 명상으로 스트레스나 스트레스 상황을 다룹니다.",
+          "english": "I usually handle stress or stressful situations by taking breaks and meditating."
+        },
+        {
+          "korean": "저는 명상으로 스트레스를 해결합니다.",
+          "english": "I handle stress by meditation."
+        },
+        {
+          "korean": "저는 운동으로 스트레스를 해결합니다.",
+          "english": "I handle stress by exercising."
+        },
+        {
+          "korean": "저는 산책으로 스트레스를 해결합니다.",
+          "english": "I handle stress by taking walks."
+        },
+        {
+          "korean": "저만의 스트레스 해소 방법이 있습니다.",
+          "english": "I have my own way to relieve stress."
+        },
+        {
+          "korean": "스트레스 해소를 위해 보통 친구들을 만납니다.",
+          "english": "To relieve stress I usually meet friends."
+        },
+        {
+          "korean": "아침에 커피를 마시면 행복해집니다.",
+          "english": "When I drink coffee in the morning it makes me happy."
+        },
+        {
+          "korean": "친구들에게 선물을 사줄 때 행복해집니다.",
+          "english": "When I buy presents for my friends it makes me happy."
+        },
+        {
+          "korean": "제가 처리할 수 없는 문제에 대해서는 너무 심각하게 생각하지 않으려고 합니다.",
+          "english": "I try not to think too seriously about a problem I cannot handle."
+        }
+      ]
+    },
+    {
+      "name": "문제 해결과 도전",
+      "sentences": [
+        {
+          "korean": "가장 큰 도전을 어떻게 다뤘나요?",
+          "english": "How did you handle your biggest challenge?"
+        },
+        {
+          "korean": "어떤 주요 도전에 직면했고 어떻게 처리했나요?",
+          "english": "What major challenges did you face? How did you handle them?"
+        },
+        {
+          "korean": "고객을 위해 어떤 문제를 해결해 봤나요?",
+          "english": "What problems have you solved for customers?"
+        },
+        {
+          "korean": "업무에서 장애물을 만났을 때 어떻게 하나요?",
+          "english": "What do you do when you encounter obstacles in your work?"
+        },
+        {
+          "korean": "업무에서 어려운 결정을 내려야 했던 예를 들어주실 수 있나요?",
+          "english": "Can you provide an example of a time when you had to make a difficult decision at work?"
+        },
+        {
+          "korean": "빠르게 배워야 했던 상황에 직면한 적이 있나요? 어떻게 처리했나요?",
+          "english": "Have you ever encountered a situation where you had to learn quickly? How did you handle it?"
+        },
+        {
+          "korean": "업무에서 새로운 상황에 적응해야 했던 경험을 말해주실 수 있나요?",
+          "english": "Can you tell me about a time when you had to adapt to a new situation at work?"
+        },
+        {
+          "korean": "업무에서 실수를 한 적이 있나요? 그렇다면 어떻게 처리했나요?",
+          "english": "Have you ever made a mistake at work? If so, how did you handle it?"
+        },
+        {
+          "korean": "업무에서 실수를 어떻게 처리하나요?",
+          "english": "How do you handle your mistakes at work?"
+        }
+      ]
+    },
+    {
+      "name": "갈등 해결",
+      "sentences": [
+        {
+          "korean": "갈등을 어떻게 처리하나요?",
+          "english": "How do you handle conflicts?"
+        },
+        {
+          "korean": "당신과 다른 사람들 사이의 갈등을 어떻게 해결하나요?",
+          "english": "How do you deal with conflict between you and others?"
+        },
+        {
+          "korean": "동료나 매니저와의 어려운 상황을 다룬 적이 있나요? 어떻게 처리했나요?",
+          "english": "Have you ever dealt with a difficult situation involving a co-worker or manager? How did you handle it?"
+        },
+        {
+          "korean": "어려운 고객이나 불만 사항을 어떻게 처리하나요?",
+          "english": "How do you handle difficult customers or guest complaints?"
+        },
+        {
+          "korean": "건설적인 비판을 어떻게 받아들이나요?",
+          "english": "How do you handle constructive criticism?"
+        }
+      ]
+    },
+    {
+      "name": "시간 관리와 조직력",
+      "sentences": [
+        {
+          "korean": "시간을 어떻게 관리하나요?",
+          "english": "How do you manage your time?"
+        },
+        {
+          "korean": "어떻게 체계적으로 시간을 효과적으로 관리하나요?",
+          "english": "How do you stay organized and manage your time effectively?"
+        },
+        {
+          "korean": "업무의 우선순위를 어떻게 정하고 모든 것이 시간 내에 완료되도록 하나요?",
+          "english": "How do you prioritize tasks and make sure everything gets done in a timely manner?"
+        },
+        {
+          "korean": "업무 효율성을 어떻게 향상시키나요?",
+          "english": "How do you improve efficiency in your work?"
+        },
+        {
+          "korean": "업무와 개인 생활의 균형을 어떻게 맞추나요?",
+          "english": "How do you balance work and personal life?"
+        },
+        {
+          "korean": "휴일이나 특별 행사 같은 바쁜 시기를 어떻게 처리하나요?",
+          "english": "How do you handle busy periods such as holidays or special events?"
+        }
+      ]
+    },
+    {
+      "name": "학습과 성장",
+      "sentences": [
+        {
+          "korean": "어떻게 배우고 성장하나요?",
+          "english": "How do you learn and grow?"
+        },
+        {
+          "korean": "새로운 지식과 기술을 어떻게 배우나요?",
+          "english": "How do you learn new knowledge and skills?"
+        },
+        {
+          "korean": "업계 동향과 발전에 어떻게 발맞춰 가나요?",
+          "english": "How do you keep up to date with industry trends and developments?"
+        },
+        {
+          "korean": "업무에서 불확실성을 어떻게 다루나요?",
+          "english": "How do you handle uncertainty in your work?"
+        },
+        {
+          "korean": "일에 대한 동기와 열정을 어떻게 유지하나요?",
+          "english": "How do you keep yourself motivated and enthusiastic about your work?"
+        }
+      ]
+    },
+    {
+      "name": "동기와 열정",
+      "sentences": [
+        {
+          "korean": "무엇에 열정을 가지고 있나요?",
+          "english": "What are you passionate about?"
+        },
+        {
+          "korean": "이런 종류의 일을 하도록 동기를 부여하는 것은 무엇인가요?",
+          "english": "What motivates you to do this kind of work?"
+        },
+        {
+          "korean": "업무에서 성공하도록 동기를 부여하는 것은 무엇인가요?",
+          "english": "What motivates you to succeed in your work?"
+        },
+        {
+          "korean": "업무에서 가장 만족스러운 것은 무엇인가요?",
+          "english": "What is the most satisfying thing for you in your work?"
+        },
+        {
+          "korean": "가장 좋아하는 직업이 왜 좋아하는 직업인가요?",
+          "english": "Why is your favorite job your favorite?"
+        },
+        {
+          "korean": "가장 잘하는 업무는 무엇인가요?",
+          "english": "What task do you excel at the most?"
+        },
+        {
+          "korean": "자유 시간에 무엇을 하나요?",
+          "english": "What do you do in your spare time?"
+        }
+      ]
+    },
+    {
+      "name": "성과와 업무 기여도",
+      "sentences": [
+        {
+          "korean": "당신의 가장 큰 성취는 무엇인가요?",
+          "english": "What is your greatest accomplishment?"
+        },
+        {
+          "korean": "제 가장 큰 업적은 교육용 앱을 출시한 것입니다.",
+          "english": "My greatest accomplishment is launching an educational app."
+        },
+        {
+          "korean": "이 직무에 어떤 기여를 할 수 있다고 생각하나요?",
+          "english": "What do you think you can contribute to this job?"
+        },
+        {
+          "korean": "회사에 무엇을 가져다줄 수 있나요?",
+          "english": "What can you bring to the company?"
+        },
+        {
+          "korean": "저는 고객지원을 개선하는데 제 능력을 기여할 수 있습니다.",
+          "english": "I can contribute my ability to improve customer support."
+        },
+        {
+          "korean": "저는 최고의 제품을 출시할 수 있도록 제 능력을 기여할 수 있습니다.",
+          "english": "I can contribute my ability to launch the best products."
+        },
+        {
+          "korean": "저는 고객 만족을 향상시킬 수 있도록 제 능력을 기여할 수 있습니다.",
+          "english": "I can contribute my ability to improve customer satisfaction."
+        },
+        {
+          "korean": "이 직무에 대한 기대는 무엇인가요?",
+          "english": "What are your expectations for this job?"
+        },
+        {
+          "korean": "당신의 업무 의무나 책임은 무엇인가요?",
+          "english": "What are the duties or responsibilities of your job?"
+        },
+        {
+          "korean": "당신의 가장 큰 전문적 성취는 무엇인가요?",
+          "english": "What is your greatest professional achievement?"
+        },
+        {
+          "korean": "과거에 완료한 성공적인 프로젝트를 설명해 주실 수 있나요?",
+          "english": "Can you describe a successful project you completed in the past?"
+        },
+        {
+          "korean": "직무 의무를 넘어서 일했던 예를 들어주실 수 있나요?",
+          "english": "Can you provide an example of a time when you went above and beyond your job duties?"
+        },
+        {
+          "korean": "업무의 정확성과 세심함을 어떻게 보장하나요?",
+          "english": "How do you ensure accuracy and attention to detail in your work?"
+        },
+        {
+          "korean": "업무가 정확하고 오류가 없도록 어떻게 보장하나요?",
+          "english": "How do you ensure that your work is accurate and free from errors?"
+        },
+        {
+          "korean": "봉사 활동이나 사회 활동에 참여한 적이 있나요?",
+          "english": "Have you participated in volunteer activities or social work?"
+        }
+      ]
+    },
+    {
+      "name": "신뢰성과 관계",
+      "sentences": [
+        {
+          "korean": "전직장 보스가 저를 믿을만하다고 말했어요.",
+          "english": "My former boss said I was trustworthy."
+        },
+        {
+          "korean": "저는 상사들과 좋은 관계를 쌓아왔기 때문에 이것에 큰 자부심이 있습니다.",
+          "english": "I take great pride in this because I've built good relationships with my supervisors."
+        },
+        {
+          "korean": "여기는 저처럼 헌신적이고 열정있는 사람이 필요해요.",
+          "english": "This place needs someone dedicated and passionate like me."
+        }
+      ]
+    },
+    {
+      "name": "미래 목표와 계획",
+      "sentences": [
+        {
+          "korean": "5년 후에는 어디에 있을 것 같나요?",
+          "english": "Where do you see yourself in 5 years?"
+        },
+        {
+          "korean": "5년 후에는 더 큰 프로젝트를 이끌고 싶습니다.",
+          "english": "In 5 years, I hope to be leading larger projects."
+        },
+        {
+          "korean": "저는 사업개발팀을 이끌고 싶습니다.",
+          "english": "I hope to be leading the business development team."
+        },
+        {
+          "korean": "더 큰 고객과 일하고 싶습니다.",
+          "english": "I hope to be working with bigger clients."
+        },
+        {
+          "korean": "당신의 커리어 목표는 무엇인가요?",
+          "english": "What goals do you have in your career?"
+        },
+        {
+          "korean": "미래에 대한 커리어 계획은 무엇인가요?",
+          "english": "What are your career plans for the future?"
+        },
+        {
+          "korean": "미래에 대한 목표는 무엇인가요?",
+          "english": "What are your goals for the future?"
+        },
+        {
+          "korean": "미래 목표는 무엇인가요?",
+          "english": "What are your future goals?"
+        },
+        {
+          "korean": "장기적 목표는 무엇인가요?",
+          "english": "What's your long-term goal?"
+        },
+        {
+          "korean": "이 직업을 얻는다면 향후 3년간 달성하고 싶은 목표는 무엇인가요?",
+          "english": "What goals would you like to achieve in the next three years if you get this job?"
+        },
+        {
+          "korean": "10년 후 제 목표는 마케팅 전문가가 되는 것입니다.",
+          "english": "In 10 years my goal is to become a marketing specialist."
+        },
+        {
+          "korean": "마케팅 전문가가 되기 위해 매일 데이터를 분석하고 인사이트를 얻을 것입니다.",
+          "english": "I will analyze the data on a daily basis and get insights from it to become a marketing specialist."
+        },
+        {
+          "korean": "제 최종 목표는 이 산업의 스타트업에서 CEO가 되는 것입니다.",
+          "english": "My final goal is to become a CEO at a startup in this industry."
+        },
+        {
+          "korean": "제 최종 목표는 이 회사에 꼭 필요한 직원이 되어 언젠가 임원으로 승진하는 것입니다.",
+          "english": "My final goal is to become an employee that is essential for this company and move up to the executive someday."
+        },
+        {
+          "korean": "장기적으로는 전략과 개발에 중점을 둔 관리직으로 이동하고 싶습니다.",
+          "english": "In the long run I would like to move into management with a focus on strategy and development."
+        },
+        {
+          "korean": "이 회사에서 일할 기회를 얻는다면 적응하기 위해 최선을 다하겠습니다.",
+          "english": "If I get a chance to work for this company I will put my utmost effort to fit it."
+        }
+      ]
+    },
+    {
+      "name": "업무 환경과 문화",
+      "sentences": [
+        {
+          "korean": "선호하는 업무 환경은 무엇인가요?",
+          "english": "What is your favorite work environment?"
+        },
+        {
+          "korean": "어떤 유형의 업무 환경을 선호하나요?",
+          "english": "What type of work environment do you prefer?"
+        },
+        {
+          "korean": "이상적인 업무 환경을 어떻게 설명하겠습니까?",
+          "english": "How would you describe an ideal working environment?"
+        },
+        {
+          "korean": "이 산업에 대한 의견은 무엇인가요?",
+          "english": "What is your opinion on this industry?"
+        },
+        {
+          "korean": "회사 문화가 당신의 커리어에 어떤 영향을 미친다고 생각하나요?",
+          "english": "How do you think company culture affects your career?"
+        },
+        {
+          "korean": "직장에서 피드백에 대한 생각은 어떠한가요?",
+          "english": "What are your thoughts on feedback in the workplace?"
+        }
+      ]
+    },
+    {
+      "name": "채용 관련 질문",
+      "sentences": [
+        {
+          "korean": "왜 우리가 당신을 고용해야 하나요?",
+          "english": "Why should I hire you?"
+        },
+        {
+          "korean": "왜 우리가 당신을 고용해야 한다고 생각하나요?",
+          "english": "Why do you think we should hire you?"
+        },
+        {
+          "korean": "이 포지션의 다른 지원자들과 당신을 차별화하는 것은 무엇이라고 생각하나요?",
+          "english": "What do you believe sets you apart from other candidates for this position?"
+        },
+        {
+          "korean": "이 역할에서 성공하기 위해 가장 중요한 자질은 무엇이라고 생각하나요?",
+          "english": "What do you think are the most important qualities for success in this role?"
+        },
+        {
+          "korean": "새로운 직장을 찾을 때 가장 중요한 요소는 무엇인가요?",
+          "english": "What are the most important factors in looking for a new job?"
+        },
+        {
+          "korean": "이전 상사는 당신을 어떻게 설명할까요?",
+          "english": "How would your former boss describe you?"
+        },
+        {
+          "korean": "상사와 동료들은 당신을 어떻게 설명할까요?",
+          "english": "How would your boss and co-workers describe you?"
+        }
+      ]
+    },
+    {
+      "name": "급여와 근무 조건",
+      "sentences": [
+        {
+          "korean": "급여 기대치는 얼마인가요?",
+          "english": "What are your salary expectations?"
+        },
+        {
+          "korean": "현재 급여 패키지는 얼마이고 얼마를 기대하나요?",
+          "english": "What is your current salary package and what would you expect?"
+        },
+        {
+          "korean": "우리가 당신에게 일자리를 제안한다면 언제 시작할 수 있나요?",
+          "english": "If we offer you a job, how soon can you start?"
+        },
+        {
+          "korean": "이사하는 것이 문제가 될까요?",
+          "english": "Would it be a problem for you to relocate?"
+        },
+        {
+          "korean": "주말 근무도 가능합니다.",
+          "english": "I can work weekends too."
+        },
+        {
+          "korean": "선택이 가능하다면 오전 근무를 하겠습니다.",
+          "english": "If given a choice, I would prefer morning shifts."
+        }
+      ]
+    },
+    {
+      "name": "특수 업무 관련",
+      "sentences": [
+        {
+          "korean": "빠른 속도의 환경에서 일할 때 가장 큰 강점은 무엇이라고 생각하나요?",
+          "english": "What do you consider your greatest strength when it comes to working in a fast-paced environment?"
+        },
+        {
+          "korean": "음식과 음료가 신속하고 정확한 온도로 제공되도록 어떻게 보장하나요?",
+          "english": "How do you ensure that food and drinks are served promptly and at the correct temperature?"
+        },
+        {
+          "korean": "재고 관리와 물품 주문 경험을 설명해 주실 수 있나요?",
+          "english": "Can you describe your experience with inventory management and ordering supplies?"
+        },
+        {
+          "korean": "음식 준비와 요리 경험은 어떤가요?",
+          "english": "What is your experience with food preparation and cooking?"
+        },
+        {
+          "korean": "현금 처리와 POS 시스템 경험은 어떤가요?",
+          "english": "What is your experience with cash handling and point-of-sale systems?"
+        }
+      ]
+    },
+    {
+      "name": "역질문",
+      "sentences": [
+        {
+          "korean": "우리 회사에 대해 궁금한 점이 있나요?",
+          "english": "Do you have any questions for our company?"
+        },
+        {
+          "korean": "우리 회사에 대해 아는 점이 있나요?",
+          "english": "What do you know about our company?"
+        },
+        {
+          "korean": "이 직무의 하루 일과는 어떻게 되나요?",
+          "english": "What does a typical day in this role look like?"
+        },
+        {
+          "korean": "팀 구조에 대해 설명해 주실 수 있나요?",
+          "english": "Can you tell me about the team structure?"
+        },
+        {
+          "korean": "성장 기회는 어떤가요?",
+          "english": "What are the opportunities for growth?"
+        },
+        {
+          "korean": "회사의 문화는 어떤가요?",
+          "english": "How would you describe the company culture?"
+        }
+      ]
+    },
+    {
+      "name": "마무리 인사",
+      "sentences": [
+        {
+          "korean": "오늘 면접 정말 감사드립니다.",
+          "english": "Thank you so much for the interview today."
+        },
+        {
+          "korean": "귀한 시간 내주셔서 감사합니다.",
+          "english": "I appreciate your time."
+        },
+        {
+          "korean": "긍정적인 결과를 기대하겠습니다.",
+          "english": "I look forward to hearing from you."
+        },
+        {
+          "korean": "추가 정보가 필요하시면 알려주세요.",
+          "english": "Please let me know if you need any additional information."
+        },
+        {
+          "korean": "이 자리를 꼭 얻고 싶습니다.",
+          "english": "I really want this opportunity."
+        },
+        {
+          "korean": "좋은 하루 되세요.",
+          "english": "Have a great day."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "category": {
+    "id": "experience",
+    "name": "경험과 성과",
+    "emoji": "📈"
+  },
+  "sentences": [
+    {
+      "id": "ex001",
+      "korean": "이전 직장에서 마케팅 캠페인을 주도했습니다.",
+      "english": "I led a marketing campaign in my previous job.",
+      "difficulty": "medium",
+      "tags": ["leadership", "marketing", "campaign"]
+    },
+    {
+      "id": "ex002",
+      "korean": "판매율을 20% 증가시킨 경험이 있습니다.",
+      "english": "I helped increase sales by 20%.",
+      "difficulty": "medium",
+      "tags": ["sales", "achievement", "percentage"]
+    },
+    {
+      "id": "ex003",
+      "korean": "프로젝트 팀장 역할을 수행했습니다.",
+      "english": "I served as the project lead.",
+      "difficulty": "medium",
+      "tags": ["project", "leadership", "lead"]
+    },
+    {
+      "id": "ex004",
+      "korean": "고객 데이터 분석을 맡았습니다.",
+      "english": "I was in charge of analyzing customer data.",
+      "difficulty": "hard",
+      "tags": ["customer", "data", "analysis"]
+    },
+    {
+      "id": "ex005",
+      "korean": "예산 관리를 담당했습니다.",
+      "english": "I was responsible for budget management.",
+      "difficulty": "medium",
+      "tags": ["budget", "management", "responsibility"]
+    },
+    {
+      "id": "ex006",
+      "korean": "주간 보고서를 작성했습니다.",
+      "english": "I prepared weekly reports.",
+      "difficulty": "easy",
+      "tags": ["reports", "weekly", "preparation"]
+    }
+  ]
+}
